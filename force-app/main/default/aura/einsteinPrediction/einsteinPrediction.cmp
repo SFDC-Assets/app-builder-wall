@@ -1,0 +1,28 @@
+<aura:component implements="flexipage:availableForRecordHome,force:hasRecordId" access="global" >
+    <aura:attribute name="cardTitle" type="String" default="Cancellation Risk" />
+    
+    <div class="wrapper">      
+        <div class="top-card">
+            <div class="center-card">
+                <span class="{!v.circlecolor}">{!v.score}</span>
+                <span><h1>{!v.cardTitle}</h1></span>
+            </div>
+            <div class="right-center-card">
+                <img src="/resource/einstein"/>
+            </div>
+        </div>
+        <div class="bottom-card">
+            <div class="card">
+                <div style="background-color:#F7F9FB; height:33px; margin-bottom:9px; margin-left:-10px;">
+                    <div style="margin-left:10px;"><h3><b>Top Factors</b></h3></div>
+                </div>
+                <ul>
+                    <div style="{!v.factor_shown_green1}"><li>Model is set to <b>Flash</b></li></div>
+                    <div style="{!v.factor_shown_green2}"><li>Battery is set to <b>75kWh</b> instead of <b>100kWh</b></li></div>
+                    <div style="{!v.factor_shown_green2}"><li>Payment Type is set to <b>Cash</b> instead of <b>Loan</b></li></div>
+                </ul>
+            </div>           
+        </div>
+    </div>    
+    
+</aura:component>
