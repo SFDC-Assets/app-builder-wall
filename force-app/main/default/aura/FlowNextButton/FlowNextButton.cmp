@@ -1,0 +1,4 @@
+<aura:component implements="lightning:availableForFlowScreens,force:hasRecordId" access="global" >
+    <aura:attribute name="label" type="String" default="Next" />
+	<button class="slds-button slds-button_neutral" onclick="{!c.buttonClick}">{!v.label}</button>
+</aura:component>
