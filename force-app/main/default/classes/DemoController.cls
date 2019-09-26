@@ -120,8 +120,8 @@ public with sharing class DemoController {
     }
 
     @AuraEnabled
-    public static void CreateJake() {
-        List<Account> accounts = [SELECT ID FROM Account WHERE Name = 'Jake Hagans'];
+    public static void CreateMike() {
+        List<Account> accounts = [SELECT ID FROM Account WHERE Name = 'Mike West'];
         for (Account account : accounts) {
             List<Contact> contacts = [SELECT ID From Contact WHERE AccountId = :account.Id];
             List<Vehicle__c> vehicles = [SELECT ID From Vehicle__c WHERE Account__c = :account.Id];
@@ -133,9 +133,9 @@ public with sharing class DemoController {
         delete accounts;
 
         Account account = new Account();
-        account.Name = 'Jake Hagans';
+        account.Name = 'Mike West';
         account.Type = 'Customer';
-        account.Username__c = 'jakehagans';
+        account.Username__c = 'mikewest';
         account.Phone = '(555) ' + String.valueOf(randomInt(111, 999)) + '-' + String.valueOf(randomInt(1111, 9999));
         account = GetRandomAddress(account);
         insert account;

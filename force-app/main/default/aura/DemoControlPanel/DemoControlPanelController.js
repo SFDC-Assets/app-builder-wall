@@ -36,9 +36,9 @@
         helper.createAccounts(component, helper, 50);
     },
 
-    createJake : function(component, event, helper) {
-        console.log('CreateJake');
-        var action = component.get("c.CreateJake");
+    createMike : function(component, event, helper) {
+        console.log('CreateMike');
+        var action = component.get("c.CreateMike");
         action.setCallback(this, function(response) {
             var state = response.getState();
             if (state === "SUCCESS") {
@@ -59,7 +59,7 @@
                 }            
         });
         $A.enqueueAction(action);
-        helper.showSuccess('Jake generated');
+        helper.showSuccess('Mike generated');
 
     },
 
