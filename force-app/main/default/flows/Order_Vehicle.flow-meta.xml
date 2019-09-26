@@ -108,6 +108,12 @@
             </value>
         </filters>
         <inputAssignments>
+            <field>Price__c</field>
+            <value>
+                <elementReference>currencyPrice</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
             <field>Status__c</field>
             <value>
                 <stringValue>Purchase</stringValue>
