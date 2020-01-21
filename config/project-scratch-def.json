@@ -3,14 +3,18 @@
   "edition": "Developer",
   "features": ["EinsteinAssistant"],
   "settings": {
-    "orgPreferenceSettings": {
-      "networksEnabled": false,
-      "s1DesktopEnabled": true,
-      "pathAssistantsEnabled": true,
-      "s1EncryptedStoragePref2": false
-    },
     "mobileSettings": {
-      "enableLightningOnMobile": true
+      "enableLightningOnMobile": true,
+      "enableS1EncryptedStoragePref2": false
+    },
+    "communitiesSettings": {
+      "enableNetworksEnabled": false
+    },
+    "lightningExperienceSettings": {
+      "enableS1DesktopEnabled": true
+    },
+    "pathAssistantSettings": {
+      "pathAssistantEnabled": true
     }
   }
 }

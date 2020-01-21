@@ -3,4 +3,8 @@
     <design:attribute name="Downpayment" />
     <design:attribute name="Rate" />
     <design:attribute name="Terms" />
+    <design:supportedFormFactors>
+        <design:supportedFormFactor type="Large"/>
+        <design:supportedFormFactor type="Small"/>
+    </design:supportedFormFactors>
 </design:component>
